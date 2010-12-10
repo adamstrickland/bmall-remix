@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Remix.StatementGenerator", 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Remix.Publishing", "Remix.Publishing\Remix.Publishing.csproj", "{29C2D4D5-F335-4159-9DFA-65C90E4F3514}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Remix.Spec", "Remix.Spec\Remix.Spec.csproj", "{42C9DBB4-0378-4451-802E-209C8D82D4FD}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -37,6 +39,10 @@ Global
 		{29C2D4D5-F335-4159-9DFA-65C90E4F3514}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{29C2D4D5-F335-4159-9DFA-65C90E4F3514}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{29C2D4D5-F335-4159-9DFA-65C90E4F3514}.Release|Any CPU.Build.0 = Release|Any CPU
+		{42C9DBB4-0378-4451-802E-209C8D82D4FD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{42C9DBB4-0378-4451-802E-209C8D82D4FD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{42C9DBB4-0378-4451-802E-209C8D82D4FD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{42C9DBB4-0378-4451-802E-209C8D82D4FD}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
