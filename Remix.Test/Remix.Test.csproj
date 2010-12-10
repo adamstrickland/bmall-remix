@@ -5,11 +5,11 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProductVersion>8.0.30703</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{42C9DBB4-0378-4451-802E-209C8D82D4FD}</ProjectGuid>
+    <ProjectGuid>{1F13A35A-0A56-4AEB-A604-DA93B4CBD9E0}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Remix.Spec</RootNamespace>
-    <AssemblyName>Remix.Spec</AssemblyName>
+    <RootNamespace>Remix.Test</RootNamespace>
+    <AssemblyName>Remix.Test</AssemblyName>
     <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
@@ -31,6 +31,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Moq">
+      <HintPath>..\..\..\..\..\..\..\Opt\Moq-4.0.10827\NET40-NoCastle\Moq.dll</HintPath>
+    </Reference>
     <Reference Include="NServiceBus">
       <HintPath>..\..\..\..\..\..\..\Opt\NServiceBus.2.0.0.1219\binaries\NServiceBus.dll</HintPath>
     </Reference>
@@ -52,38 +55,8 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Class1.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\Remix.CommissionEngine\Remix.CommissionEngine.csproj">
-      <Project>{E594C826-585F-4A41-B277-4A00A45B8FA4}</Project>
-      <Name>Remix.CommissionEngine</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\Remix.Common\Remix.Common.csproj">
-      <Project>{CD6600B8-C26E-4E68-811F-985D6D9AAF49}</Project>
-      <Name>Remix.Common</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\Remix.Messages\Remix.Messages.csproj">
-      <Project>{D8C0130B-F401-41C3-A696-3CBD50E3A6CF}</Project>
-      <Name>Remix.Messages</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\Remix.Publishing\Remix.Publishing.csproj">
-      <Project>{29C2D4D5-F335-4159-9DFA-65C90E4F3514}</Project>
-      <Name>Remix.Publishing</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\Remix.StatementGenerator\Remix.StatementGenerator.csproj">
-      <Project>{4CA9442B-F05F-405F-BD78-0480AB7911CC}</Project>
-      <Name>Remix.StatementGenerator</Name>
-    </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Features\" />
-    <Folder Include="Steps\" />
-    <Folder Include="Support\" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="Externals\Moq.dll" />
-    <Content Include="Externals\TechTalk.SpecFlow.dll" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

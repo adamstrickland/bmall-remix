@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-namespace Remix.Spec
+namespace Remix.Test
 {
     public class Class1
     {
